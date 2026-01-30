@@ -8,13 +8,13 @@ These rules are non-negotiable and must be followed by every agent (Nexus, Plann
 
 ## 🏮 Skill Discovery (Phase 0)
 
-1.  **MANDATORY CHECK**: Before starting any `PLANNING` or `EXECUTION` phase, you MUST list the contents of the `.agent/skills/` directory.
+1.  **MANDATORY CHECK**: Before starting any `PLANNING` or `EXECUTION` phase, you MUST list or consult the contents of the `.github/skills/` directory.
 2.  **RELEVANCE MATCH**: If the task involves one of the domains covered by the skills (e.g., Backend, Frontend, DevOps), you MUST use `view_file` to read the corresponding `SKILL.md`.
 3.  **LOG REASONING**: In your internal thought process, you MUST explicitly state which skills were consulted and how they influenced your plan.
 
 ## 🧠 Memory Integration (Phase 0.5)
 
-1. **READ MEMORY FIRST**: Before any planning or execution, read `.agent/memory.md` to understand:
+1. **READ MEMORY FIRST**: Before any planning or execution, read `.github/memory.md` to understand:
    - Past architectural decisions and their rationale
    - Known mistakes and how to prevent them
    - Project-specific conventions and preferences
@@ -23,9 +23,9 @@ These rules are non-negotiable and must be followed by every agent (Nexus, Plann
 
 ## 🛠️ Tools Awareness
 
-1. **CHECK FOR TOOLS**: Before proposing manual commands, check `.agent/tools/scripts/` for existing automation.
+1. **CHECK FOR TOOLS**: Before proposing manual commands, check `.github/tools/scripts/` for existing automation.
 2. **USE TOOLS WHEN AVAILABLE**: If a tool exists for the task, use it instead of manual commands.
-3. **SUGGEST TOOLS**: If a task is repetitive, suggest creating a tool in `.agent/tools/scripts/`.
+3. **SUGGEST TOOLS**: If a task is repetitive, suggest creating a tool in `.github/tools/scripts/`.
 
 ## 🏗️ Workflow Alignment
 

@@ -14,15 +14,18 @@ Create the `task.md`, a detailed checklist that allows implementation to occur i
 ## 📋 Decomposition Process
 
 ### 1. Granularity and Context
-- **Consult Skills & Rules**: Before decomposing, read the relevant `SKILL.md` and `.agent/rules/rules-*-*.md` to ensure the tasks reflect the required technical standards.
+
+- **Consult Skills & Rules**: Before decomposing, read the relevant `SKILL.md` and `.github/rules/rules-*-*.md` to ensure the tasks reflect the required technical standards.
 - Each task must be atomic (focused on a single change).
 - Each task must have a clear acceptance criterion.
 
 ### 2. Logical Ordering
+
 - Tasks should follow an order that allows for intermediate testing.
 - Common example: Infra/Database -> Domain/Business -> Application/API -> UI.
 
 ### 3. Acceptance Criteria
+
 - Specify how to validate if the task was completed successfully (e.g., "Unit tests passing", "Linter without errors").
 
 ## 📄 task.md Structure

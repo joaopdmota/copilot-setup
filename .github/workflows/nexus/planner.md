@@ -14,25 +14,29 @@ Create the `implementation_plan.md` that will serve as a guide for implementatio
 ## 📋 Planning Process
 
 ### 1. Requirement and Context Analysis
-- **Read Memory First**: Check `.agent/memory.md` for past decisions, lessons learned, and project context.
+
+- **Read Memory First**: Check `.github/memory.md` for past decisions, lessons learned, and project context.
 - Understand the user's ultimate goal.
 - Analyze the existing codebase to identify where changes should occur.
-- **Consult Skills**: Check `.agent/skills/` and read relevant `SKILL.md` files. This is mandatory.
-- **Consult Rules**: Check `.agent/rules/` and read relevant `rules-tech-*.md` and `rules-soft-*.md`.
+- **Consult Skills**: Check `.github/skills/` and read relevant `SKILL.md` files. This is mandatory.
+- **Consult Rules**: Check `.github/rules/` and read relevant `rules-tech-*.md` and `rules-soft-*.md`.
 - **Citations**: Explicitly mention in the plan which skills, rules, and memory insights were used to design the solution.
 
 ### 2. Implementation Strategy
+
 - Define the affected layers (Data, Domain, API, UI).
 - List new files and files to be modified.
 - Specify API contracts or schema changes.
 
 ### 3. Test Definition
+
 - Identify success and failure scenarios.
 - Define mocking and integration strategies.
 
 ## 📄 Implementation Plan Structure
 
 The plan must contain:
+
 - **Summary**: What will be done.
 - **Technical Context**: Affected files and dependencies.
 - **Changes per Layer**: Detail of logic and structure.

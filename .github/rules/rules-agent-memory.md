@@ -6,12 +6,14 @@
 
 ## 📖 Reading Memory
 
-**MANDATORY:** Before starting any significant task (planning, implementation, or review), you MUST read `.agent/memory.md` to understand:
+**MANDATORY:** Before starting any significant task (planning, implementation, or review), you MUST read `.github/memory.md` to understand:
+
 - Past architectural decisions and their rationale
 - Known mistakes and how to prevent them
 - Project-specific context and preferences
 
 **When to read:**
+
 - At the start of `/planner` workflow
 - Before implementing a new feature
 - During `/reviewer` audits
@@ -20,21 +22,26 @@
 
 ## ✍️ Writing to Memory
 
-**MANDATORY:** Update `.agent/memory.md` when:
+**MANDATORY:** Update `.github/memory.md` when:
 
 ### 1. Critical Mistakes Occur
+
 If you make an error that:
+
 - Violates a rule you should have known
 - Causes a bug or security issue
 - Requires significant rework
 
 **Action:** Add entry to "Lessons Learned" section with:
+
 - What happened
 - Root cause
 - Prevention strategy
 
 ### 2. Architectural Decisions Are Made
+
 When the user approves a significant technical decision:
+
 - New technology adoption
 - Architecture pattern change
 - Major refactoring approach
@@ -42,11 +49,13 @@ When the user approves a significant technical decision:
 **Action:** Add entry to "Architectural Decisions" section.
 
 ### 3. Anti-Patterns Are Discovered
+
 During code review, if you identify a recurring bad pattern:
 
 **Action:** Document in "Anti-Patterns Discovered" section.
 
 ### 4. Performance Issues Are Resolved
+
 After fixing a performance bottleneck:
 
 **Action:** Add to "Performance Learnings" with before/after metrics.
@@ -86,6 +95,7 @@ When updating memory:
 ## 🎯 Success Metric
 
 The memory is working when:
+
 - You stop making the same mistake twice
 - New agents can understand project context quickly
 - Architectural decisions have clear rationale
