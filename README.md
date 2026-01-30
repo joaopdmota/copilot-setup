@@ -200,32 +200,13 @@ This updates **rules, skills, workflows and tools** according to the central sta
 
 To reuse this setup in another repository:
 
-1. **Copy the `.github` folder** into the new repository:
+1. **Add (or adjust) the `agents` target in the new repo `Makefile`**:
 
-```bash
-cd /path/to/your-new-repo
-cp -R /path/to/template/.github .
-```
+.PHONY: agents
+agents:
+	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/copilot-setup/main/.github/scripts/sync-copilot-setup.sh)"
 
-2. **Add (or adjust) the `agents` target in the new repo `Makefile`**:
-
-   ```makefile
-   .PHONY: agents
-   agents:
-   	@bash .github/scripts/sync-copilot-setup.sh
-   ```
-
-````
-
-3. **Ensure Copilot is configured to use instruction files** in your editor (VS Code: setting `Use Instruction Files` enabled).
-
-4. Whenever you need to sync with the central standard:
-
-  ```bash
-  make agents
-  ```
-
-5. From that point, Copilot will automatically:
+From that point, Copilot will automatically:
   - Read `.github/copilot-instructions.md` as the global instruction file.
   - Apply relevant `*.instructions.md` based on file paths.
   - Use rules, skills, memory, workflows and tools as described above.
