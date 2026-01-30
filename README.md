@@ -172,39 +172,17 @@ Folder: `.github/tools/`
 
 Workflows (such as `/code-review`) invoke these scripts to automate parts of the process.
 
-### 7.2 Sync script
-
-Folder: `.github/scripts/`
-
-- `sync-copilot-setup.sh` – wrapper script to synchronize this `.github` folder with the central `copilot-setup` repository.
-
-The `Makefile` in the repo root has a target:
-
-```makefile
-.PHONY: agents
-agents:
-  @bash .github/scripts/sync-copilot-setup.sh
-```
-
-Run:
-
-```bash
-make agents
-```
-
-This updates **rules, skills, workflows and tools** according to the central standard.
-
----
-
 ## 8. How to copy this ecosystem to another project
 
 To reuse this setup in another repository:
 
 1. **Add (or adjust) the `agents` target in the new repo `Makefile`**:
 
+```
 .PHONY: agents
 agents:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/copilot-setup/main/.github/scripts/sync-copilot-setup.sh)"
+```
 
 From that point, Copilot will automatically:
   - Read `.github/copilot-instructions.md` as the global instruction file.
