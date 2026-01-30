@@ -7,4 +7,4 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT_DIR"
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/antigravity-setup/main/scripts/sync-agents.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/copilot-setup/main/.github/scripts/sync-copilot-setup.sh)"
